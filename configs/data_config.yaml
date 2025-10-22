@@ -1,0 +1,31 @@
+# Data Pipeline Configuration
+
+data_storage:
+  format: "csv" # Options: csv, parquet, json
+  compression: "gzip" # Options: gzip, bz2, zip, none
+
+data_quality:
+  # Acceptable ranges for pollutants (μg/m³)
+  pm2_5_range: [0, 500]
+  pm10_range: [0, 1000]
+  no2_range: [0, 400]
+  o3_range: [0, 500]
+  co_range: [0, 50000]
+  so2_range: [0, 1000]
+
+  # AQI range
+  aqi_range: [1, 5]
+
+  # Data completeness threshold
+  min_completeness_percent: 80
+
+# Feature Engineering
+features:
+  lag_hours: [1, 3, 6, 12, 24]
+  rolling_windows: [3, 6, 12, 24]
+
+# File naming convention
+file_naming:
+  raw_pattern: "{city}_{date}_raw.csv"
+  processed_pattern: "{city}_{date}_processed.csv"
+  date_format: "%Y%m%d_%H%M%S"
