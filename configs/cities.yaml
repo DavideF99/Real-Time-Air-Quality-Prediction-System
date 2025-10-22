@@ -1,0 +1,65 @@
+# City Configuration for Air Quality Monitoring
+# Format: City data with coordinates for API calls
+
+cities:
+  bangkok:
+    name: "Bangkok"
+    country: "Thailand"
+    country_code: "TH"
+    latitude: 13.7563
+    longitude: 100.5018
+    timezone: "Asia/Bangkok"
+
+  durban:
+    name: "Durban"
+    country: "South Africa"
+    country_code: "ZA"
+    latitude: -29.8587
+    longitude: 31.0218
+    timezone: "Africa/Johannesburg"
+
+  sao_paulo:
+    name: "São Paulo"
+    country: "Brazil"
+    country_code: "BR"
+    latitude: -23.5505
+    longitude: -46.6333
+    timezone: "America/Sao_Paulo"
+
+  sydney:
+    name: "Sydney"
+    country: "Australia"
+    country_code: "AU"
+    latitude: -33.8688
+    longitude: 151.2093
+    timezone: "Australia/Sydney"
+
+  london:
+    name: "London"
+    country: "United Kingdom"
+    country_code: "GB"
+    latitude: 51.5074
+    longitude: -0.1278
+    timezone: "Europe/London"
+
+  new_york:
+    name: "New York City"
+    country: "United States"
+    country_code: "US"
+    latitude: 40.7128
+    longitude: -74.0060
+    timezone: "America/New_York"
+
+# Data Collection Settings
+collection:
+  frequency_hours: 1
+  retry_attempts: 3
+  retry_delay_seconds: 5
+  timeout_seconds: 10
+
+# API Settings
+api:
+  base_url: "http://api.openweathermap.org/data/2.5"
+  endpoints:
+    air_pollution: "/air_pollution"
+    air_pollution_forecast: "/air_pollution/forecast"
