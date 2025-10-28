@@ -10,16 +10,16 @@
 ## 📋 TABLE OF CONTENTS
 
 1. [Overview](#-overview)
-2. [What We Built](#-what-we-built)
-3. [Project Structure](#project-structure)
-4. [Core Scripts & Modules](#core-scripts--modules)
-5. [Daily Operations](#daily-operations)
-6. [Testing & Verification](#testing--verification)
-7. [Monitoring & Maintenance](#monitoring--maintenance)
-8. [Troubleshooting](#troubleshooting)
-9. [Data Collection Progress](#data-collection-progress)
-10. [Key Learnings](#key-learnings)
-11. [Next Steps](#next-steps)
+2. [What We Built](##%EF%B8%8F-what-we-built)
+3. [Project Structure](#-project-structure)
+4. [Core Scripts & Modules](#-core-scripts--modules)
+5. [Daily Operations](#-daily-operations)
+6. [Testing & Verification](#-testing--verification)
+7. [Monitoring & Maintenance](#-monitoring--maintenance)
+8. [Troubleshooting](#-troubleshooting)
+9. [Data Collection Progress](#-data-collection-progress)
+10. [Key Learnings](#-key-learnings)
+11. [Next Steps](#-next-steps)
 
 ---
 
