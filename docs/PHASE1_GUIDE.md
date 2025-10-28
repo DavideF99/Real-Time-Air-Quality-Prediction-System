@@ -10,7 +10,7 @@
 ## 📋 TABLE OF CONTENTS
 
 1. [Overview](#-overview)
-2. [What We Built](#what-we-built)
+2. [What We Built](#-what-we-built)
 3. [Project Structure](#project-structure)
 4. [Core Scripts & Modules](#core-scripts--modules)
 5. [Daily Operations](#daily-operations)
