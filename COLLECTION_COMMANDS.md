@@ -6,13 +6,13 @@ This file contains ALL commands you need to monitor and manage your data collect
 
 ## 📋 TABLE OF CONTENTS
 
-1. [Daily Monitoring](#daily-monitoring)
-2. [Service Management](#service-management)
-3. [Viewing Logs](#viewing-logs)
-4. [Data Verification](#data-verification)
-5. [Testing & Debugging](#testing--debugging)
-6. [Troubleshooting](#troubleshooting)
-7. [What to Look For](#what-to-look-for)
+1. [Daily Monitoring](#-daily-monitoring)
+2. [Service Management](#%EF%B8%8F-service-management)
+3. [Viewing Logs](#-viewing-logs)
+4. [Data Verification](#-data-verification)
+5. [Testing & Debugging](#-testing--debugging)
+6. [Troubleshooting](#-troubleshooting)
+7. [What to Look For](#-what-to-look-for)
 
 ---
 
