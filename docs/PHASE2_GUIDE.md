@@ -10,17 +10,17 @@
 
 ## 📋 TABLE OF CONTENTS
 
-1. [Overview](#overview)
-2. [What We Built](#what-we-built)
-3. [Notebook Structure](#notebook-structure)
-4. [Detailed Notebook Summaries](#detailed-notebook-summaries)
-5. [Key Discoveries](#key-discoveries)
-6. [Files Generated](#files-generated)
-7. [Tools & Techniques Used](#tools--techniques-used)
-8. [How to Run the Notebooks](#how-to-run-the-notebooks)
-9. [Troubleshooting](#troubleshooting)
-10. [Key Learnings](#key-learnings)
-11. [Next Steps](#next-steps)
+1. [Overview](#-overview)
+2. [What We Built](#%EF%B8%8F-what-we-built)
+3. [Notebook Structure](#-notebook-structure)
+4. [Detailed Notebook Summaries](#-detailed-notebook-summaries)
+5. [Key Discoveries](#-key-discoveries)
+6. [Files Generated](#-files-generated)
+7. [Tools & Techniques Used](#-tools--techniques-used)
+8. [How to Run the Notebooks](#-how-to-run-the-notebooks)
+9. [Troubleshooting](#-troubleshooting)
+10. [Key Learnings](#-key-learnings)
+11. [Next Steps](#-next-steps)
 
 ---
 
