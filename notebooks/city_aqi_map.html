@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6fe96ede7be1165bbee6f968dedb4d91 {
+                #map_ca80caae52b7cf71e83baa891b6103ab {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_6fe96ede7be1165bbee6f968dedb4d91" ></div>
+            <div class="folium-map" id="map_ca80caae52b7cf71e83baa891b6103ab" ></div>
         
 </body>
 <script>
     
     
-            var map_6fe96ede7be1165bbee6f968dedb4d91 = L.map(
-                "map_6fe96ede7be1165bbee6f968dedb4d91",
+            var map_ca80caae52b7cf71e83baa891b6103ab = L.map(
+                "map_ca80caae52b7cf71e83baa891b6103ab",
                 {
                     center: [20.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_483474e30531ff90fd901618e070a824 = L.tileLayer(
+            var tile_layer_88d030dcf612c0a3b3100e6f84a65fbc = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,17 +95,17 @@
             );
         
     
-            tile_layer_483474e30531ff90fd901618e070a824.addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+            tile_layer_88d030dcf612c0a3b3100e6f84a65fbc.addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var marker_1cbe2c3ad17220b3e58b94f59de586e4 = L.marker(
+            var marker_fdb5cdfdc0a31ebdfa27bb50388df54c = L.marker(
                 [13.7563, 100.5018],
                 {
 }
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var icon_f06fd33edcfbb857930ae8cef68e9aa3 = L.AwesomeMarkers.icon(
+            var icon_c329edaffa85dd8dc3b67f7accb4eb72 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -116,24 +116,24 @@
             );
         
     
-        var popup_d5417c5ce98db9a49eccae1ed2c69666 = L.popup({
+        var popup_48154c6d0a008d3e2e1ca7409d2c1a07 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_4cfefd4b7600ba0ae39792ac3a2e5659 = $(`<div id="html_4cfefd4b7600ba0ae39792ac3a2e5659" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: red;">Bangkok, Thailand</h4>         <b>Status:</b> Poor/Very Poor<br>         <b>Average AQI:</b> 2.05<br>         <b>PM2.5:</b> 19.00 μg/m³<br>         <b>PM10:</b> 20.98 μg/m³<br>     </div>     </div>`)[0];
-                popup_d5417c5ce98db9a49eccae1ed2c69666.setContent(html_4cfefd4b7600ba0ae39792ac3a2e5659);
+                var html_3d01138e158c7b9b9525c4b681fa5328 = $(`<div id="html_3d01138e158c7b9b9525c4b681fa5328" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: red;">Bangkok, Thailand</h4>         <b>Status:</b> Poor/Very Poor<br>         <b>Average AQI:</b> 2.08<br>         <b>PM2.5:</b> 19.87 μg/m³<br>         <b>PM10:</b> 21.82 μg/m³<br>     </div>     </div>`)[0];
+                popup_48154c6d0a008d3e2e1ca7409d2c1a07.setContent(html_3d01138e158c7b9b9525c4b681fa5328);
             
         
 
-        marker_1cbe2c3ad17220b3e58b94f59de586e4.bindPopup(popup_d5417c5ce98db9a49eccae1ed2c69666)
+        marker_fdb5cdfdc0a31ebdfa27bb50388df54c.bindPopup(popup_48154c6d0a008d3e2e1ca7409d2c1a07)
         ;
 
         
     
     
-            marker_1cbe2c3ad17220b3e58b94f59de586e4.bindTooltip(
+            marker_fdb5cdfdc0a31ebdfa27bb50388df54c.bindTooltip(
                 `<div>
                      Bangkok: AQI 2.1
                  </div>`,
@@ -143,23 +143,23 @@
             );
         
     
-                marker_1cbe2c3ad17220b3e58b94f59de586e4.setIcon(icon_f06fd33edcfbb857930ae8cef68e9aa3);
+                marker_fdb5cdfdc0a31ebdfa27bb50388df54c.setIcon(icon_c329edaffa85dd8dc3b67f7accb4eb72);
             
     
-            var circle_ce97b4433dd4761428282a931ea95432 = L.circle(
+            var circle_030b681e055f5bb74498defdf8264bea = L.circle(
                 [13.7563, 100.5018],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 205095.5414012739, "stroke": true, "weight": 3}
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 208374.3842364532, "stroke": true, "weight": 3}
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var marker_b96d129db8383f0ec8c8ca4b9daee38d = L.marker(
+            var marker_0bee88e6419f6fa27667feb3d52f28ae = L.marker(
                 [-29.8587, 31.0218],
                 {
 }
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var icon_9c12c1cc79fea50223cb8f007c5ccf05 = L.AwesomeMarkers.icon(
+            var icon_c18e6c239bc8e3d7cee926e3ac3a8989 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -170,26 +170,26 @@
             );
         
     
-        var popup_a387fac79d9d511060419a0a8a1330a8 = L.popup({
+        var popup_5a2b6cd6968f26b696647f0c87b27a0a = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_0d4842bac91bb19e1aeeaa088ec756c2 = $(`<div id="html_0d4842bac91bb19e1aeeaa088ec756c2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">Durban, South Africa</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 1.24<br>         <b>PM2.5:</b> 4.68 μg/m³<br>         <b>PM10:</b> 9.84 μg/m³<br>     </div>     </div>`)[0];
-                popup_a387fac79d9d511060419a0a8a1330a8.setContent(html_0d4842bac91bb19e1aeeaa088ec756c2);
+                var html_60b239a59ec63f8a50d2e534b6d52c1b = $(`<div id="html_60b239a59ec63f8a50d2e534b6d52c1b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">Durban, South Africa</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 1.38<br>         <b>PM2.5:</b> 6.16 μg/m³<br>         <b>PM10:</b> 12.80 μg/m³<br>     </div>     </div>`)[0];
+                popup_5a2b6cd6968f26b696647f0c87b27a0a.setContent(html_60b239a59ec63f8a50d2e534b6d52c1b);
             
         
 
-        marker_b96d129db8383f0ec8c8ca4b9daee38d.bindPopup(popup_a387fac79d9d511060419a0a8a1330a8)
+        marker_0bee88e6419f6fa27667feb3d52f28ae.bindPopup(popup_5a2b6cd6968f26b696647f0c87b27a0a)
         ;
 
         
     
     
-            marker_b96d129db8383f0ec8c8ca4b9daee38d.bindTooltip(
+            marker_0bee88e6419f6fa27667feb3d52f28ae.bindTooltip(
                 `<div>
-                     Durban: AQI 1.2
+                     Durban: AQI 1.4
                  </div>`,
                 {
   "sticky": true,
@@ -197,23 +197,23 @@
             );
         
     
-                marker_b96d129db8383f0ec8c8ca4b9daee38d.setIcon(icon_9c12c1cc79fea50223cb8f007c5ccf05);
+                marker_0bee88e6419f6fa27667feb3d52f28ae.setIcon(icon_c18e6c239bc8e3d7cee926e3ac3a8989);
             
     
-            var circle_e7da110dcd7c3bd69598cc7b1a2deb78 = L.circle(
+            var circle_e5a8cbbcfe96e6d2c53708ca7d760088 = L.circle(
                 [-29.8587, 31.0218],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 123717.94871794872, "stroke": true, "weight": 3}
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 137623.7623762376, "stroke": true, "weight": 3}
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var marker_d1accaa37735568c60b7ca38fbb5a526 = L.marker(
+            var marker_bed9a865915a5ecc15dc1aaa92130545 = L.marker(
                 [51.5074, -0.1278],
                 {
 }
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var icon_acdf24a579db7346cb288a8c2fbffe5b = L.AwesomeMarkers.icon(
+            var icon_b3437d4c04259a841fedf9a7294e7d1e = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -224,24 +224,24 @@
             );
         
     
-        var popup_aebe8958fe25a993e4a27d4b80f9311d = L.popup({
+        var popup_657847bc578a5655a55db2ee9a2493b4 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_d8f230948797aafbac14c83eefad4a17 = $(`<div id="html_d8f230948797aafbac14c83eefad4a17" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">London, United Kingdom</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 2.00<br>         <b>PM2.5:</b> 1.03 μg/m³<br>         <b>PM10:</b> 2.57 μg/m³<br>     </div>     </div>`)[0];
-                popup_aebe8958fe25a993e4a27d4b80f9311d.setContent(html_d8f230948797aafbac14c83eefad4a17);
+                var html_15d9f2ba229cd55f5ad9ea46e9551d96 = $(`<div id="html_15d9f2ba229cd55f5ad9ea46e9551d96" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">London, United Kingdom</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 2.00<br>         <b>PM2.5:</b> 1.28 μg/m³<br>         <b>PM10:</b> 3.08 μg/m³<br>     </div>     </div>`)[0];
+                popup_657847bc578a5655a55db2ee9a2493b4.setContent(html_15d9f2ba229cd55f5ad9ea46e9551d96);
             
         
 
-        marker_d1accaa37735568c60b7ca38fbb5a526.bindPopup(popup_aebe8958fe25a993e4a27d4b80f9311d)
+        marker_bed9a865915a5ecc15dc1aaa92130545.bindPopup(popup_657847bc578a5655a55db2ee9a2493b4)
         ;
 
         
     
     
-            marker_d1accaa37735568c60b7ca38fbb5a526.bindTooltip(
+            marker_bed9a865915a5ecc15dc1aaa92130545.bindTooltip(
                 `<div>
                      London: AQI 2.0
                  </div>`,
@@ -251,23 +251,23 @@
             );
         
     
-                marker_d1accaa37735568c60b7ca38fbb5a526.setIcon(icon_acdf24a579db7346cb288a8c2fbffe5b);
+                marker_bed9a865915a5ecc15dc1aaa92130545.setIcon(icon_b3437d4c04259a841fedf9a7294e7d1e);
             
     
-            var circle_05c08d1921c2f464e0f51d01d07e7223 = L.circle(
+            var circle_416c15fcc4b0aa4df915625b41a0adc6 = L.circle(
                 [51.5074, -0.1278],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 200000.0, "stroke": true, "weight": 3}
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var marker_23c3467070c25e4784a610f960d88fb4 = L.marker(
+            var marker_2b4ccde0c3e3fc982f115b4004847262 = L.marker(
                 [40.7128, -74.006],
                 {
 }
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var icon_dc12f903ed34eda0ac2cb950ff00f4f3 = L.AwesomeMarkers.icon(
+            var icon_8701f180014e33ed929b2a95750acafd = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -278,24 +278,24 @@
             );
         
     
-        var popup_0b209be518eb0109ad93424cc77ccf50 = L.popup({
+        var popup_6d0833dc2d0e4dbbcbed91adca661094 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_4c9d3e1c0e6a92b812c43cccccfff7e5 = $(`<div id="html_4c9d3e1c0e6a92b812c43cccccfff7e5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">New York City, United States</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 1.47<br>         <b>PM2.5:</b> 2.84 μg/m³<br>         <b>PM10:</b> 4.69 μg/m³<br>     </div>     </div>`)[0];
-                popup_0b209be518eb0109ad93424cc77ccf50.setContent(html_4c9d3e1c0e6a92b812c43cccccfff7e5);
+                var html_8ea3036a086205bfeb68ad44f178231f = $(`<div id="html_8ea3036a086205bfeb68ad44f178231f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">New York City, United States</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 1.55<br>         <b>PM2.5:</b> 3.26 μg/m³<br>         <b>PM10:</b> 5.03 μg/m³<br>     </div>     </div>`)[0];
+                popup_6d0833dc2d0e4dbbcbed91adca661094.setContent(html_8ea3036a086205bfeb68ad44f178231f);
             
         
 
-        marker_23c3467070c25e4784a610f960d88fb4.bindPopup(popup_0b209be518eb0109ad93424cc77ccf50)
+        marker_2b4ccde0c3e3fc982f115b4004847262.bindPopup(popup_6d0833dc2d0e4dbbcbed91adca661094)
         ;
 
         
     
     
-            marker_23c3467070c25e4784a610f960d88fb4.bindTooltip(
+            marker_2b4ccde0c3e3fc982f115b4004847262.bindTooltip(
                 `<div>
                      New York City: AQI 1.5
                  </div>`,
@@ -305,23 +305,23 @@
             );
         
     
-                marker_23c3467070c25e4784a610f960d88fb4.setIcon(icon_dc12f903ed34eda0ac2cb950ff00f4f3);
+                marker_2b4ccde0c3e3fc982f115b4004847262.setIcon(icon_8701f180014e33ed929b2a95750acafd);
             
     
-            var circle_65b6cfd2dc56b1795f6c2730efbcca3e = L.circle(
+            var circle_cc2707a5b8cfcac7c4e76378aa02a334 = L.circle(
                 [40.7128, -74.006],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 147133.75796178344, "stroke": true, "weight": 3}
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 154679.80295566504, "stroke": true, "weight": 3}
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var marker_00cb0e59b470c0c24660b0fad5efd028 = L.marker(
+            var marker_196f80218dbe179bdd3e4ac7cd3dda1b = L.marker(
                 [-23.5505, -46.6333],
                 {
 }
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var icon_1342c7da633ea831846ae6c35efed81c = L.AwesomeMarkers.icon(
+            var icon_e0ee966b8695d2fdb0392472fa6b09f0 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -332,26 +332,26 @@
             );
         
     
-        var popup_95eb206e4048143454e406bd76eccd25 = L.popup({
+        var popup_1b823b822c03ca9d4524f82a0c7b3676 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_841aa628199bdf68341f834b869fdce8 = $(`<div id="html_841aa628199bdf68341f834b869fdce8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">São Paulo, Brazil</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 1.39<br>         <b>PM2.5:</b> 7.22 μg/m³<br>         <b>PM10:</b> 11.41 μg/m³<br>     </div>     </div>`)[0];
-                popup_95eb206e4048143454e406bd76eccd25.setContent(html_841aa628199bdf68341f834b869fdce8);
+                var html_6ce815ce2b1bdd6427a65d4b2535f07d = $(`<div id="html_6ce815ce2b1bdd6427a65d4b2535f07d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">São Paulo, Brazil</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 1.30<br>         <b>PM2.5:</b> 6.30 μg/m³<br>         <b>PM10:</b> 9.87 μg/m³<br>     </div>     </div>`)[0];
+                popup_1b823b822c03ca9d4524f82a0c7b3676.setContent(html_6ce815ce2b1bdd6427a65d4b2535f07d);
             
         
 
-        marker_00cb0e59b470c0c24660b0fad5efd028.bindPopup(popup_95eb206e4048143454e406bd76eccd25)
+        marker_196f80218dbe179bdd3e4ac7cd3dda1b.bindPopup(popup_1b823b822c03ca9d4524f82a0c7b3676)
         ;
 
         
     
     
-            marker_00cb0e59b470c0c24660b0fad5efd028.bindTooltip(
+            marker_196f80218dbe179bdd3e4ac7cd3dda1b.bindTooltip(
                 `<div>
-                     São Paulo: AQI 1.4
+                     São Paulo: AQI 1.3
                  </div>`,
                 {
   "sticky": true,
@@ -359,23 +359,23 @@
             );
         
     
-                marker_00cb0e59b470c0c24660b0fad5efd028.setIcon(icon_1342c7da633ea831846ae6c35efed81c);
+                marker_196f80218dbe179bdd3e4ac7cd3dda1b.setIcon(icon_e0ee966b8695d2fdb0392472fa6b09f0);
             
     
-            var circle_1e9dfa6b9acede18de42ce1a07a0a264 = L.circle(
+            var circle_743397b07005f154427f245d06dbdeef = L.circle(
                 [-23.5505, -46.6333],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 138853.50318471337, "stroke": true, "weight": 3}
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 130049.26108374384, "stroke": true, "weight": 3}
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var marker_38015ab08574f97da1f4895abb16a75c = L.marker(
+            var marker_5a8e91961f44befe349732dba6d600eb = L.marker(
                 [-33.8688, 151.2093],
                 {
 }
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
     
-            var icon_dbbe0a9900a137e732a9310c578d394f = L.AwesomeMarkers.icon(
+            var icon_660c8908285d3971d60b80fa33d587a9 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -386,24 +386,24 @@
             );
         
     
-        var popup_6dfdcbb1ba8e213a1a8f22e959c18734 = L.popup({
+        var popup_ec6eeda7a6d7eb6ab9f467e5b091193f = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_8b555e74aea041dbf3dc3b427a603038 = $(`<div id="html_8b555e74aea041dbf3dc3b427a603038" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">Sydney, Australia</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 1.20<br>         <b>PM2.5:</b> 3.59 μg/m³<br>         <b>PM10:</b> 5.07 μg/m³<br>     </div>     </div>`)[0];
-                popup_6dfdcbb1ba8e213a1a8f22e959c18734.setContent(html_8b555e74aea041dbf3dc3b427a603038);
+                var html_6d8673d0d0f69f6d36c6921c4e037016 = $(`<div id="html_6d8673d0d0f69f6d36c6921c4e037016" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 12px; width: 200px;">         <h4 style="margin: 0 0 10px 0; color: green;">Sydney, Australia</h4>         <b>Status:</b> Good/Fair<br>         <b>Average AQI:</b> 1.20<br>         <b>PM2.5:</b> 3.34 μg/m³<br>         <b>PM10:</b> 4.77 μg/m³<br>     </div>     </div>`)[0];
+                popup_ec6eeda7a6d7eb6ab9f467e5b091193f.setContent(html_6d8673d0d0f69f6d36c6921c4e037016);
             
         
 
-        marker_38015ab08574f97da1f4895abb16a75c.bindPopup(popup_6dfdcbb1ba8e213a1a8f22e959c18734)
+        marker_5a8e91961f44befe349732dba6d600eb.bindPopup(popup_ec6eeda7a6d7eb6ab9f467e5b091193f)
         ;
 
         
     
     
-            marker_38015ab08574f97da1f4895abb16a75c.bindTooltip(
+            marker_5a8e91961f44befe349732dba6d600eb.bindTooltip(
                 `<div>
                      Sydney: AQI 1.2
                  </div>`,
@@ -413,13 +413,13 @@
             );
         
     
-                marker_38015ab08574f97da1f4895abb16a75c.setIcon(icon_dbbe0a9900a137e732a9310c578d394f);
+                marker_5a8e91961f44befe349732dba6d600eb.setIcon(icon_660c8908285d3971d60b80fa33d587a9);
             
     
-            var circle_7e9479fa33d80ea95b9b33978cd1d264 = L.circle(
+            var circle_99800f3bf60ff538763ac8727e394f0c = L.circle(
                 [-33.8688, 151.2093],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 119745.2229299363, "stroke": true, "weight": 3}
-            ).addTo(map_6fe96ede7be1165bbee6f968dedb4d91);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 120197.04433497538, "stroke": true, "weight": 3}
+            ).addTo(map_ca80caae52b7cf71e83baa891b6103ab);
         
 </script>
 </html>
