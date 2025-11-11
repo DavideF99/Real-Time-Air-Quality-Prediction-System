@@ -175,13 +175,11 @@ class BaseModel(ABC):
         # Load model data
         model_data = joblib.load(filepath)
         
-        # Create instance
-        instance = cls(
-            name=model_data['name'],
-            model_params=model_data['model_params']
-        )
+        # Create instance WITHOUT name parameter (models don't need it when loading)
+        instance = cls(**model_data.get('model_params', {}))
         
         # Restore state
+        instance.name = model_data['name']
         instance.model = model_data['model']
         instance.feature_names = model_data['feature_names']
         instance.is_trained = model_data['is_trained']
