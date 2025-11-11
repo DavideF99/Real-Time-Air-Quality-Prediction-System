@@ -79,9 +79,9 @@ cp .env.example .env
 ## 📊 Project Status
 
 - [x] Phase 1: Project Setup & Data Collection (In Progress)
-- [ ] Phase 2: Exploratory Data Analysis
-- [ ] Phase 3: Model Development
-- [ ] Phase 4: API Development
+- [x] Phase 2: Exploratory Data Analysis
+- [x] Phase 3: Model Development
+- [x] Phase 4: API Development
 - [ ] Phase 5: Testing & Quality Assurance
 - [ ] Phase 6: Deployment & Monitoring
 
