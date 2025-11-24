@@ -243,11 +243,13 @@ class DataCleaner:
         df = df.sort_values('timestamp')
         
         # Forward fill for pollutant columns (within same city)
+        # Only include columns that actually exist in the DataFrame
         pollutant_cols = ['pm2_5', 'pm10', 'no2', 'o3', 'co', 'so2', 'nh3', 'no']
+        existing_pollutant_cols = [col for col in pollutant_cols if col in df.columns]
         
         for city in df['city_key'].unique():
             city_mask = df['city_key'] == city
-            df.loc[city_mask, pollutant_cols] = df.loc[city_mask, pollutant_cols].fillna(method='ffill', limit=3)
+            df.loc[city_mask, existing_pollutant_cols] = df.loc[city_mask, existing_pollutant_cols].ffill(limit=3)
         
         # Drop rows with critical missing values
         # AQI is critical - drop if missing

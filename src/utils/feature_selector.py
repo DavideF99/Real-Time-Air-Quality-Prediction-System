@@ -88,13 +88,18 @@ class FeatureSelector:
         # Sort by correlation (descending)
         self.correlation_scores = pd.Series(correlations).sort_values(ascending=False)
         
-        # Select top N
-        selected = self.correlation_scores.head(top_n).index.tolist()
+        # Select top N (but not more than available features)
+        n_features = min(top_n, len(self.correlation_scores))
+        selected = self.correlation_scores.head(n_features).index.tolist()
         
         logger.info(f"✓ Selected {len(selected)} features by correlation")
         logger.info(f"  Top 5: {', '.join(selected[:5])}")
-        logger.info(f"  Correlation range: [{self.correlation_scores.iloc[0]:.3f}, "
-                   f"{self.correlation_scores.iloc[top_n-1]:.3f}]")
+        
+        # Only log range if we have features
+        if len(selected) > 0:
+            last_idx = min(n_features - 1, len(self.correlation_scores) - 1)
+            logger.info(f"  Correlation range: [{self.correlation_scores.iloc[0]:.3f}, "
+                       f"{self.correlation_scores.iloc[last_idx]:.3f}]")
         
         return selected
     
@@ -140,13 +145,18 @@ class FeatureSelector:
             index=numeric_cols
         ).sort_values(ascending=False)
         
-        # Select top N
-        selected = self.mutual_info_scores.head(top_n).index.tolist()
+        # Select top N (but not more than available features)
+        n_features = min(top_n, len(self.mutual_info_scores))
+        selected = self.mutual_info_scores.head(n_features).index.tolist()
         
         logger.info(f"✓ Selected {len(selected)} features by Mutual Information")
         logger.info(f"  Top 5: {', '.join(selected[:5])}")
-        logger.info(f"  MI range: [{self.mutual_info_scores.iloc[0]:.3f}, "
-                   f"{self.mutual_info_scores.iloc[top_n-1]:.3f}]")
+        
+        # Only log range if we have features
+        if len(selected) > 0:
+            last_idx = min(n_features - 1, len(self.mutual_info_scores) - 1)
+            logger.info(f"  MI range: [{self.mutual_info_scores.iloc[0]:.3f}, "
+                       f"{self.mutual_info_scores.iloc[last_idx]:.3f}]")
         
         return selected
     
