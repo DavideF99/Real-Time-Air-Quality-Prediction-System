@@ -1,15 +1,3 @@
----
-title: City Air Quality Predictor
-emoji: 🌍
-colorFrom: blue
-colorTo: green
-sdk: gradio
-sdk_version: 5.49.1
-app_file: app.py
-pinned: false
-license: mit
----
-
 # 🌍 Real-Time Air Quality Prediction System
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -23,6 +11,7 @@ An end-to-end machine learning project that predicts **Air Quality Index (AQI)**
 Air pollution causes 7 million premature deaths annually (WHO). This system helps citizens make informed decisions by providing accurate, localized air quality forecasts.
 
 **Key Features:**
+
 - **Real-time Data Pipeline:** Fetches live data from OpenWeatherMap API.
 - **Advanced ML Models:** Utilizes XGBoost, LightGBM, and Random Forest for high-accuracy predictions.
 - **Interactive Dashboard:** Gradio-based web interface for easy interaction.
@@ -41,15 +30,16 @@ Air pollution causes 7 million premature deaths annually (WHO). This system help
 
 We evaluated multiple models. **XGBoost** emerged as the top performer.
 
-| Model | RMSE (Test) | MAE (Test) | R² (Test) |
-|-------|-------------|------------|-----------|
-| **XGBoost** | **0.83** | **0.61** | **-0.31*** |
-| LightGBM | 0.85 | 0.63 | -0.35 |
-| Random Forest | 0.88 | 0.65 | -0.40 |
+| Model         | RMSE (Test) | MAE (Test) | R² (Test)   |
+| ------------- | ----------- | ---------- | ----------- |
+| **XGBoost**   | **0.83**    | **0.61**   | **-0.31\*** |
+| LightGBM      | 0.85        | 0.63       | -0.35       |
+| Random Forest | 0.88        | 0.65       | -0.40       |
 
-*> Note: R² is negative on the test set due to distribution shift in recent data, but the model maintains high accuracy in classification (Good/Moderate/Unhealthy).*
+_> Note: R² is negative on the test set due to distribution shift in recent data, but the model maintains high accuracy in classification (Good/Moderate/Unhealthy)._
 
 **Key Drivers of AQI:**
+
 1. **PM2.5 Rolling Min (24h):** Most critical indicator.
 2. **AQI Rolling Mean (24h):** Strong temporal autocorrelation.
 3. **NO2 Levels:** Significant contributor in urban areas.
@@ -57,18 +47,21 @@ We evaluated multiple models. **XGBoost** emerged as the top performer.
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Python 3.11+
 - OpenWeatherMap API Key
 
 ### Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/DavideF99/City-Air-Quality-Index-Predictor-with-Live-Data-Pipeline.git
    cd City-Air-Quality-Index-Predictor-with-Live-Data-Pipeline
    ```
 
 2. **Install dependencies:**
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -117,6 +110,7 @@ This project is ready for deployment on **Hugging Face Spaces**.
 ## 👤 Author
 
 **Davide Ferreri**
+
 - [GitHub](https://github.com/DavideF99)
 - [LinkedIn](https://www.linkedin.com/in/davideferreri/)
 
