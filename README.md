@@ -1,3 +1,15 @@
+---
+title: City Air Quality Predictor
+emoji: 🌍
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: 5.49.1
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # 🌍 Real-Time Air Quality Prediction System
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
