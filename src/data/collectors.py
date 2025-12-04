@@ -55,7 +55,12 @@ class AirQualityCollector:
     def __init__(self):
         """Initialize the collector with configuration."""
         self.config = get_config()
-        self.api_key = self.config.get_api_key()
+        try:
+            self.api_key = self.config.get_api_key()
+        except Exception:
+            self.api_key = None
+            logger.warning("API key not found. Real-time data fetching will be disabled.")
+            
         self.base_url = self.config.get_api_base_url()
         self.collection_settings = self.config.get_collection_settings()
         
@@ -84,6 +89,9 @@ class AirQualityCollector:
         city_config = self.config.get_city(city_key)
         if not city_config:
             raise ValueError(f"City '{city_key}' not found in configuration")
+            
+        if not self.api_key:
+            raise APIError("OpenWeatherMap API key not configured. Please add OPENWEATHER_API_KEY to your environment variables or .env file.")
         
         logger.info(f"Fetching air quality data for {city_config['name']}")
         
