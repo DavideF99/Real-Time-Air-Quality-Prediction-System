@@ -1,0 +1,60 @@
+{
+  "model_name": "XGBoost",
+  "training_time": 0.23462,
+  "timestamp": "2025-11-10T11:37:48.764335",
+  "data_info": {
+    "n_train": 650,
+    "n_val": 139,
+    "n_test": 140,
+    "n_features": 166
+  },
+  "metrics": {
+    "train": {
+      "rmse": 0.01594806682309568,
+      "mae": 0.010180840125450721,
+      "r2": 0.9992787211851344,
+      "mape": 0.767071989801587,
+      "category_accuracy": 0.7215384615384616,
+      "within_1_aqi": 1.0
+    },
+    "validation": {
+      "rmse": 0.4934466346025324,
+      "mae": 0.3907920722481158,
+      "r2": 0.007497426502928506,
+      "mape": 26.37421923804234,
+      "category_accuracy": 0.5827338129496403,
+      "within_1_aqi": 0.9712230215827338
+    },
+    "test": {
+      "rmse": 0.8301542771827625,
+      "mae": 0.6133100892816271,
+      "r2": -0.3114038863035693,
+      "mape": 31.341837231064783,
+      "category_accuracy": 0.42857142857142855,
+      "within_1_aqi": 0.7714285714285715
+    }
+  },
+  "feature_importance": {
+    "aqi_rolling_min_24h": 0.35852718353271484,
+    "pm2_5_rolling_min_24h": 0.09157546609640121,
+    "aqi_rolling_mean_24h": 0.050218790769577026,
+    "pm2_5_rolling_min_12h": 0.04056901857256889,
+    "no2_rolling_max_24h": 0.03687199950218201,
+    "o3_rolling_min_24h": 0.031313277781009674,
+    "o3_rolling_mean_24h": 0.022873880341649055,
+    "aqi_lag_3h": 0.01854623295366764,
+    "day_sin": 0.018416594713926315,
+    "pm10_lag_12h": 0.018193289637565613,
+    "pollution_score": 0.015858972445130348,
+    "pm10_rolling_mean_24h": 0.015377667732536793,
+    "pm2_5_rolling_std_24h": 0.014023923315107822,
+    "pm2_5_rolling_mean_6h": 0.01337780524045229,
+    "no2_rolling_min_6h": 0.012226881459355354,
+    "o3_rolling_std_24h": 0.011557833291590214,
+    "pm10_rolling_max_6h": 0.009724771603941917,
+    "no2_rolling_mean_24h": 0.009206345304846764,
+    "aqi_rolling_min_12h": 0.008978395722806454,
+    "pm10_rolling_std_6h": 0.008114110678434372
+  },
+  "model_path": "/Users/davideferreri/Documents/GitHub/City-Air-Quality-Index-Predictor-with-Live-Data-Pipeline/data/models/xgboost.joblib"
+}

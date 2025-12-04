@@ -1,0 +1,38 @@
+{
+  "model_name": "MovingAverage-3",
+  "training_time": 0.000605,
+  "timestamp": "2025-11-04T09:18:38.277277",
+  "data_info": {
+    "n_train": 457,
+    "n_val": 97,
+    "n_test": 99,
+    "n_features": 166
+  },
+  "metrics": {
+    "train": {
+      "rmse": 0.784142620886399,
+      "mae": 0.5025528811086798,
+      "r2": -0.5669017521596955,
+      "mape": 34.77388767036941,
+      "category_accuracy": 0.5864332603938731,
+      "within_1_aqi": 0.9387308533916849
+    },
+    "validation": {
+      "rmse": 0.4590941826024669,
+      "mae": 0.24742268041237114,
+      "r2": 0.15612293144208034,
+      "mape": 19.4158075584622,
+      "category_accuracy": 0.7938144329896907,
+      "within_1_aqi": 1.0
+    },
+    "test": {
+      "rmse": 0.5275783780687109,
+      "mae": 0.3164983164983165,
+      "r2": -0.14718250630782181,
+      "mape": 27.441077438543765,
+      "category_accuracy": 0.7272727272727273,
+      "within_1_aqi": 1.0
+    }
+  },
+  "model_path": "/Users/davideferreri/Documents/GitHub/City-Air-Quality-Index-Predictor-with-Live-Data-Pipeline/data/models/movingaverage-3.joblib"
+}

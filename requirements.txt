@@ -1,0 +1,41 @@
+# Core
+python-dotenv
+requests
+pydantic
+python-dateutil
+loguru
+
+# Data Processing
+pandas
+numpy
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+joblib
+statsmodels
+
+# Visualization
+matplotlib
+seaborn
+plotly
+altair
+
+# API
+fastapi
+uvicorn
+httpx
+
+# Dashboard & UI
+streamlit
+gradio
+
+# Notebooks
+jupyter
+notebook
+ipykernel
+
+# Testing
+pytest
+pytest-cov

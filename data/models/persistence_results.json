@@ -1,0 +1,38 @@
+{
+  "model_name": "Persistence",
+  "training_time": 0.000922,
+  "timestamp": "2025-11-04T09:18:38.259150",
+  "data_info": {
+    "n_train": 457,
+    "n_val": 97,
+    "n_test": 99,
+    "n_features": 166
+  },
+  "metrics": {
+    "train": {
+      "rmse": 0.5081394388136974,
+      "mae": 0.24507658643326038,
+      "r2": 0.3420127873493094,
+      "mape": 15.17140773044706,
+      "category_accuracy": 0.7614879649890591,
+      "within_1_aqi": 0.9934354485776805
+    },
+    "validation": {
+      "rmse": 0.739183165783231,
+      "mae": 0.5463917525773195,
+      "r2": -1.1876595744680856,
+      "mape": 40.72164948115979,
+      "category_accuracy": 0.4536082474226804,
+      "within_1_aqi": 1.0
+    },
+    "test": {
+      "rmse": 0.6195469181897234,
+      "mae": 0.3838383838383838,
+      "r2": -0.5820016820857865,
+      "mape": 30.808080805378786,
+      "category_accuracy": 0.6161616161616161,
+      "within_1_aqi": 1.0
+    }
+  },
+  "model_path": "/Users/davideferreri/Documents/GitHub/City-Air-Quality-Index-Predictor-with-Live-Data-Pipeline/data/models/persistence.joblib"
+}

@@ -1,0 +1,60 @@
+{
+  "model_name": "LinearRegression",
+  "training_time": 0.016187,
+  "timestamp": "2025-11-05T09:57:42.473750",
+  "data_info": {
+    "n_train": 650,
+    "n_val": 139,
+    "n_test": 140,
+    "n_features": 166
+  },
+  "metrics": {
+    "train": {
+      "rmse": 0.24253093922980967,
+      "mae": 0.1816029905605289,
+      "r2": 0.8331902696641212,
+      "mape": 13.26312171232488,
+      "category_accuracy": 0.6692307692307692,
+      "within_1_aqi": 0.9984615384615385
+    },
+    "validation": {
+      "rmse": 0.931457827958202,
+      "mae": 0.6852013732247921,
+      "r2": -2.536532492193577,
+      "mape": 53.70334382550595,
+      "category_accuracy": 0.49640287769784175,
+      "within_1_aqi": 0.7266187050359713
+    },
+    "test": {
+      "rmse": 1.208508499874391,
+      "mae": 0.997672480580219,
+      "r2": -1.7791901716180156,
+      "mape": 65.87248142285883,
+      "category_accuracy": 0.4714285714285714,
+      "within_1_aqi": 0.5642857142857143
+    }
+  },
+  "feature_importance": {
+    "no2_rolling_std_3h": 1.1779811652863441,
+    "aqi_rolling_mean_6h": 1.0067683257923135,
+    "no2_rolling_mean_3h": 0.7954876862783407,
+    "no2_rolling_min_3h": 0.7387362836545754,
+    "aqi_rolling_std_24h": 0.681491484453291,
+    "day_sin": 0.5607956266608921,
+    "pm10_rolling_mean_3h": 0.49887020802496096,
+    "aqi_above_safe": 0.489595235899448,
+    "pm2_5_rolling_std_6h": 0.46313059093383563,
+    "aqi_rolling_mean_24h": 0.4200398334165177,
+    "pm2_5_rolling_std_12h": 0.3988612715954447,
+    "pm2_5_rolling_max_3h": 0.39812331705966575,
+    "no2_rolling_max_3h": 0.394956728621569,
+    "pm_ratio": 0.3744665488953992,
+    "weekend_x_aqi": 0.37151600629968834,
+    "pm2_5_rolling_min_24h": 0.36598661337009614,
+    "pm2_5_rolling_mean_3h": 0.33936412332175936,
+    "nh3": 0.3359481259321644,
+    "aqi_rolling_min_24h": 0.3254875786375848,
+    "pm10_rolling_max_3h": 0.30566606580808076
+  },
+  "model_path": "/Users/davideferreri/Documents/GitHub/City-Air-Quality-Index-Predictor-with-Live-Data-Pipeline/data/models/linearregression.joblib"
+}

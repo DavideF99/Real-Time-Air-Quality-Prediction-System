@@ -1,0 +1,60 @@
+{
+  "model_name": "LightGBM",
+  "training_time": 0.280981,
+  "timestamp": "2025-11-05T10:04:49.710202",
+  "data_info": {
+    "n_train": 650,
+    "n_val": 139,
+    "n_test": 140,
+    "n_features": 166
+  },
+  "metrics": {
+    "train": {
+      "rmse": 0.043603441619200614,
+      "mae": 0.0201668966027877,
+      "r2": 0.99460826396701,
+      "mape": 1.3949910553834526,
+      "category_accuracy": 0.7415384615384616,
+      "within_1_aqi": 1.0
+    },
+    "validation": {
+      "rmse": 0.5150501032650804,
+      "mae": 0.4115654107795069,
+      "r2": -0.08130999157012253,
+      "mape": 27.90023079031878,
+      "category_accuracy": 0.48201438848920863,
+      "within_1_aqi": 1.0
+    },
+    "test": {
+      "rmse": 0.7897917431591611,
+      "mae": 0.5905252481641797,
+      "r2": -0.1869817040992987,
+      "mape": 31.31814553085661,
+      "category_accuracy": 0.4357142857142857,
+      "within_1_aqi": 0.8071428571428572
+    }
+  },
+  "feature_importance": {
+    "so2": 62,
+    "o3_lag_24h": 59,
+    "o3_rolling_std_3h": 49,
+    "no2_rolling_std_3h": 49,
+    "o3_rolling_std_6h": 47,
+    "o3_lag_12h": 46,
+    "pm10_lag_24h": 45,
+    "pm10_rolling_std_3h": 43,
+    "no2_rolling_mean_6h": 42,
+    "pm2_5_change_3h": 41,
+    "o3_rolling_std_24h": 41,
+    "o3_rolling_mean_24h": 40,
+    "pm2_5_change_12h": 39,
+    "no2": 37,
+    "no2_rolling_std_12h": 37,
+    "no2_rolling_std_6h": 37,
+    "co": 36,
+    "no2_lag_6h": 36,
+    "o3": 35,
+    "pm10_change_1h": 34
+  },
+  "model_path": "/Users/davideferreri/Documents/GitHub/City-Air-Quality-Index-Predictor-with-Live-Data-Pipeline/data/models/lightgbm.joblib"
+}

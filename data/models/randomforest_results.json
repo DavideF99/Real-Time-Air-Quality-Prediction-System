@@ -1,0 +1,60 @@
+{
+  "model_name": "RandomForest",
+  "training_time": 0.089995,
+  "timestamp": "2025-11-05T10:04:25.381444",
+  "data_info": {
+    "n_train": 650,
+    "n_val": 139,
+    "n_test": 140,
+    "n_features": 166
+  },
+  "metrics": {
+    "train": {
+      "rmse": 0.07348469228349536,
+      "mae": 0.043784615384615394,
+      "r2": 0.9846862750362455,
+      "mape": 3.098076922826434,
+      "category_accuracy": 0.6953846153846154,
+      "within_1_aqi": 1.0
+    },
+    "validation": {
+      "rmse": 0.4747039971309346,
+      "mae": 0.3979856115107913,
+      "r2": 0.08146219409282707,
+      "mape": 26.338129494442086,
+      "category_accuracy": 0.43884892086330934,
+      "within_1_aqi": 1.0
+    },
+    "test": {
+      "rmse": 0.7895197455234596,
+      "mae": 0.5757142857142856,
+      "r2": -0.18616427184466033,
+      "mape": 28.774999998243985,
+      "category_accuracy": 0.39285714285714285,
+      "within_1_aqi": 0.8214285714285714
+    }
+  },
+  "feature_importance": {
+    "pm10_rolling_min_24h": 0.03540472777316746,
+    "aqi_rolling_min_24h": 0.022930281230868616,
+    "no2_rolling_mean_3h": 0.02122212900541176,
+    "o3_rolling_min_24h": 0.020865052947740305,
+    "o3_rolling_mean_24h": 0.020425012848688168,
+    "pm2_5_rolling_min_24h": 0.020346376776274613,
+    "no2_rolling_min_3h": 0.020225592383261853,
+    "aqi_rolling_mean_24h": 0.019274025283866153,
+    "pm2_5_rolling_min_12h": 0.019127137411045925,
+    "pm2_5_rolling_min_6h": 0.019054921436903176,
+    "pm10_rolling_min_12h": 0.01895759506570632,
+    "no2_rolling_min_24h": 0.01599799729213771,
+    "o3_lag_24h": 0.01580564029205076,
+    "pm2_5_rolling_min_3h": 0.01571787810852441,
+    "pm2_5_rolling_mean_24h": 0.015574253466893426,
+    "pm2_5_rolling_max_24h": 0.015097184123910761,
+    "pm2_5_rolling_mean_6h": 0.014825795233727504,
+    "pm2_5_rolling_mean_12h": 0.0137975972167704,
+    "pm2_5_lag_6h": 0.01347313418030024,
+    "no2": 0.012785827632761917
+  },
+  "model_path": "/Users/davideferreri/Documents/GitHub/City-Air-Quality-Index-Predictor-with-Live-Data-Pipeline/data/models/randomforest.joblib"
+}
