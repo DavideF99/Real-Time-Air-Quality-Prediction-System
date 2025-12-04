@@ -3,6 +3,7 @@ python-dotenv
 requests
 pydantic
 python-dateutil
+loguru
 
 # Data Processing
 pandas
