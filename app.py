@@ -87,6 +87,35 @@ def predict_aqi_manual(city, pm2_5, pm10, no2, o3, co, so2, nh3, model_name):
     except Exception as e:
         return create_error_display(f"Error: {str(e)}")
 
+def get_live_pollutants(city):
+    """
+    Fetch real-time air quality data and return individual pollutant values.
+    Used to pre-fill manual input fields.
+    """
+    try:
+        city_key = city.lower().replace(' ', '_')
+        data = collector.fetch_city_data(city_key)
+        
+        if not data:
+            # Return current values or defaults if fetch fails
+            return gr.update(), gr.update(), gr.update(), gr.update(), gr.update(), gr.update(), gr.update()
+        
+        # Parse response to get pollutant dictionary
+        parsed = collector.parse_api_response(data)
+        
+        return (
+            parsed.get('pm2_5', 15.0),
+            parsed.get('pm10', 25.0),
+            parsed.get('no2', 10.0),
+            parsed.get('o3', 30.0),
+            parsed.get('co', 0.5),
+            parsed.get('so2', 5.0),
+            parsed.get('nh3', 2.0)
+        )
+    except Exception as e:
+        print(f"Error fetching live data: {e}")
+        return gr.update(), gr.update(), gr.update(), gr.update(), gr.update(), gr.update(), gr.update()
+
 def create_prediction_display(prediction, confidence, pollutants, is_realtime=False):
     """Create a formatted display for the prediction results."""
     color, emoji, category, health_msg = get_aqi_color_and_emoji(prediction)
@@ -260,6 +289,8 @@ with gr.Blocks(title="City Air Quality Predictor", css=custom_css, theme=gr.them
                         value=models[0] if models else "xgboost"
                     )
                     
+                    load_live_btn = gr.Button("📥 Load Live Data", variant="secondary")
+                    
                     gr.Markdown("### 🧪 Pollutant Levels")
                     
                     with gr.Row():
@@ -286,6 +317,12 @@ with gr.Blocks(title="City Air Quality Predictor", css=custom_css, theme=gr.them
                 inputs=[manual_city_input, pm2_5_input, pm10_input, no2_input, o3_input, 
                        co_input, so2_input, nh3_input, manual_model_input],
                 outputs=manual_output
+            )
+
+            load_live_btn.click(
+                fn=get_live_pollutants,
+                inputs=[manual_city_input],
+                outputs=[pm2_5_input, pm10_input, no2_input, o3_input, co_input, so2_input, nh3_input]
             )
     
     # Footer with information

@@ -4,6 +4,7 @@ requests
 pydantic
 python-dateutil
 loguru
+pyyaml
 
 # Data Processing
 pandas
@@ -16,26 +17,5 @@ lightgbm
 joblib
 statsmodels
 
-# Visualization
-matplotlib
-seaborn
-plotly
-altair
-
-# API
-fastapi
-uvicorn
-httpx
-
-# Dashboard & UI
-streamlit
+# UI
 gradio
-
-# Notebooks
-jupyter
-notebook
-ipykernel
-
-# Testing
-pytest
-pytest-cov
