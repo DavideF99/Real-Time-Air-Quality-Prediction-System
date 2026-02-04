@@ -37,15 +37,18 @@ def fetch_realtime_data(city, model_name):
         if not data:
             return create_error_display("Failed to fetch real-time data. Please check your API key or try manual input.")
         
+        # Parse response into structured format
+        parsed_data = collector.parse_api_response(data)
+        
         # Extract pollutant values
         pollutants = {
-            'pm2_5': data.get('pm2_5', 0),
-            'pm10': data.get('pm10', 0),
-            'no2': data.get('no2', 0),
-            'o3': data.get('o3', 0),
-            'co': data.get('co', 0),
-            'so2': data.get('so2', 0),
-            'nh3': data.get('nh3', 0)
+            'pm2_5': parsed_data.get('pm2_5', 0),
+            'pm10': parsed_data.get('pm10', 0),
+            'no2': parsed_data.get('no2', 0),
+            'o3': parsed_data.get('o3', 0),
+            'co': parsed_data.get('co', 0),
+            'so2': parsed_data.get('so2', 0),
+            'nh3': parsed_data.get('nh3', 0)
         }
         
         # Make prediction
