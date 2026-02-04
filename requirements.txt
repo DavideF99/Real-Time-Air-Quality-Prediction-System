@@ -5,6 +5,7 @@ pydantic
 python-dateutil
 loguru
 pyyaml
+setuptools
 
 # Data Processing
 pandas
@@ -18,4 +19,4 @@ joblib
 statsmodels
 
 # UI
-gradio
+gradio>=4.44.1
