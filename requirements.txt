@@ -6,6 +6,7 @@ python-dateutil
 loguru
 pyyaml
 setuptools
+huggingface_hub<1.0.0
 
 # Data Processing
 pandas
