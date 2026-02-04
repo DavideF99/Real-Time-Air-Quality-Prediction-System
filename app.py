@@ -148,8 +148,8 @@ def create_prediction_display(prediction, confidence, pollutants, is_realtime=Fa
             <p style="margin: 0; font-size: 24px; font-weight: bold; color: #1e293b;">{confidence['lower']:.2f} - {confidence['upper']:.2f}</p>
         </div>
         <p style="color: #475569; line-height: 1.6; margin: 10px 0 0 0; font-size: 14px;">
-            <strong>What does this mean?</strong> The model predicts the AQI is <strong>{prediction:.2f}</strong>, 
-            but the true value is likely between <strong>{confidence['lower']:.2f}</strong> and <strong>{confidence['upper']:.2f}</strong>. 
+            <strong style="color: #000000;">What does this mean?</strong> The model predicts the AQI is <strong style="color: #000000;">{prediction:.2f}</strong>, 
+            but the true value is likely between <strong style="color: #000000;">{confidence['lower']:.2f}</strong> and <strong style="color: #000000;">{confidence['upper']:.2f}</strong>. 
             A narrower range (±{ci_width:.2f}) indicates higher confidence in the prediction.
         </p>
     </div>
